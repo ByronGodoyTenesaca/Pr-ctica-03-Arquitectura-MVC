@@ -86,7 +86,7 @@ public class Auto extends Terrestre implements Transporte{
 
     @Override
     public String toString() {
-        return "Auto{" + "materialparachoques=" + materialparachoques + ", capo=" + capo + ", maletero=" + maletero + ", tapacubos=" + tapacubos + '}';
+        return super.toString()+"Auto{" + "materialparachoques=" + materialparachoques + ", capo=" + capo + ", maletero=" + maletero + ", tapacubos=" + tapacubos + '}';
     }
     
     public void dañado(){

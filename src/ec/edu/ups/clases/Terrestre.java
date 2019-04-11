@@ -76,7 +76,7 @@ public abstract class Terrestre extends MedioTransporte{
 
     @Override
     public String toString() {
-        return "Terrestre{" + "mediopropulsion=" + mediopropulsion + ", aro=" + aro + ", material=" + material + ", motorizado=" + motorizado + '}';
+        return super.toString()+"Terrestre{" + "mediopropulsion=" + mediopropulsion + ", aro=" + aro + ", material=" + material + ", motorizado=" + motorizado + '}';
     }
     
     public void acelerar(){

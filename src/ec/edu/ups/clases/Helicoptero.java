@@ -86,7 +86,7 @@ public class Helicoptero extends Aereo implements Transporte{
 
     @Override
     public String toString() {
-        return "Helicoptero{" + "palanca=" + palanca + ", tipo=" + tipo + ", artilleria=" + artilleria + ", mastil=" + mastil + '}';
+        return super.toString()+"Helicoptero{" + "palanca=" + palanca + ", tipo=" + tipo + ", artilleria=" + artilleria + ", mastil=" + mastil + '}';
     }
     
     public void encender(){

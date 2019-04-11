@@ -86,7 +86,7 @@ public class Bicicleta extends Terrestre implements Transporte{
 
     @Override
     public String toString() {
-        return "Bicicleta{" + "pedales=" + pedales + ", montura=" + montura + ", materialcuadro=" + materialcuadro + ", horquilla=" + horquilla + '}';
+        return super.toString()+"Bicicleta{" + "pedales=" + pedales + ", montura=" + montura + ", materialcuadro=" + materialcuadro + ", horquilla=" + horquilla + '}';
     }
     
     public void montar(){
