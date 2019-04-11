@@ -87,5 +87,18 @@ public class Bicicleta extends Terrestre{
         return "Bicicleta{" + "pedales=" + pedales + ", montura=" + montura + ", materialcuadro=" + materialcuadro + ", horquilla=" + horquilla + '}';
     }
     
+    public void montar(){
     
+        System.out.println("las personas montan la bici");
+    } 
+    
+    public void participar(){
+    
+        System.out.println("las personas participan en competencias");
+    }
+    
+    public void pedaliar(){
+    
+        System.out.println("las personas pedalean para acelerar");
+    }
 }

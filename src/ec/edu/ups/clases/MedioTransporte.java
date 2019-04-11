@@ -79,6 +79,19 @@ public class MedioTransporte {
     }
     
     
+   public void llantas(){
    
+       System.out.println("este metodo imprime la cantidad de llantas que poseen");
+   }
+   
+   public void velocidad(){
+   
+       System.out.println("este metodo imprime la velocidad que pueden alcanzar los medios de transporte");
+   }
+   
+   public void matricula(){
+   
+       System.out.println("metodo que imprime los numeros de matricula que poseen");
+   }
     
 }

@@ -87,5 +87,18 @@ public class Auto extends Terrestre{
         return "Auto{" + "materialparachoques=" + materialparachoques + ", capo=" + capo + ", maletero=" + maletero + ", tapacubos=" + tapacubos + '}';
     }
     
+    public void dañado(){
     
+        System.out.println("los autos se dañan");
+    } 
+    
+    public void tuniado(){
+    
+        System.out.println("los autos estan modificados");
+    }
+    
+    public void rapido(){
+    
+        System.out.println("los autos corren rapido");
+    }
 }

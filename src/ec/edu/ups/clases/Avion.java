@@ -87,5 +87,18 @@ public class Avion extends Aereo{
         return "Avion{" + "alas=" + alas + ", distribucion=" + distribucion + ", entretenimiento=" + entretenimiento + ", tripulacion=" + tripulacion + '}';
     }
     
+    public void elevarse(){
     
+        System.out.println("los aviones se elevan");
+    } 
+    
+    public void decender(){
+    
+        System.out.println("los aviones decienden");
+    }
+    
+    public void descargar(){
+    
+        System.out.println("los aviones descargan pasajeros ");
+    }
 }

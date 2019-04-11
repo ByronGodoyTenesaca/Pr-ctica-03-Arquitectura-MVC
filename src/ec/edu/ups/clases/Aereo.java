@@ -79,6 +79,19 @@ public abstract class Aereo extends MedioTransporte {
         return "Aereo{" + "rotores=" + rotores + ", helices=" + helices + ", estabilizadores=" + estabilizadores + ", presurizacion=" + presurizacion + '}';
     }
    
+    public void despegar(){
     
+        System.out.println("los vehiculos aereos despegan");
+    }
+    
+    public void aterrizar(){
+    
+        System.out.println("los vehiculos aereos pueden aterrizar");
+    }
+    
+    public void volar(){
+    
+        System.out.println("los vehiculos llevan un vuelo de crucero ");
+    }
     
 }

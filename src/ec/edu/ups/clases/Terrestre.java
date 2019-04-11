@@ -79,6 +79,19 @@ public abstract class Terrestre extends MedioTransporte{
         return "Terrestre{" + "mediopropulsion=" + mediopropulsion + ", aro=" + aro + ", material=" + material + ", motorizado=" + motorizado + '}';
     }
     
+    public void acelerar(){
     
+        System.out.println("los vehiculos terrrestres aceleran");
+    }
     
+    public void frenar(){
+    
+        System.out.println("los vehiculos frenan al atravezarse algo");
+    }
+    
+    public void detenerse(){
+    
+        System.out.println("los vehiculos pueden detenerse en cualquier momen");
+    }
+
 }
