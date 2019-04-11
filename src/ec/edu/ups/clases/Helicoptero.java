@@ -87,7 +87,21 @@ public class Helicoptero extends Aereo{
         return "Helicoptero{" + "palanca=" + palanca + ", tipo=" + tipo + ", artilleria=" + artilleria + ", mastil=" + mastil + '}';
     }
     
+    public void encender(){
     
+        System.out.println("los helicoteros se encienden");
+    } 
+    
+    public void arreglar(){
+    
+        System.out.println("los helicopteros e arreglan ¿");
+    }
+    
+    public void cargar(){
+    
+        System.out.println("el helicoptero carga los materiales");
+    }
+   
     
     
 }
