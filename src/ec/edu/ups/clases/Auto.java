@@ -5,11 +5,13 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Transporte;
+
 /**
  *
  * @author Usuario
  */
-public class Auto extends Terrestre{
+public class Auto extends Terrestre implements Transporte{
     
     private String materialparachoques;
     private boolean capo;
@@ -100,5 +102,15 @@ public class Auto extends Terrestre{
     public void rapido(){
     
         System.out.println("los autos corren rapido");
+    }
+
+    @Override
+    public String imprimir() {
+       return "imprimiendo informacion de la clase auto";
+    }
+
+    @Override
+    public String modificar() {
+        return "modificando informacion de la clase auto";
     }
 }

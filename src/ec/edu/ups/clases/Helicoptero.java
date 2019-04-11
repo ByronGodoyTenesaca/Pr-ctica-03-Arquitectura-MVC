@@ -5,11 +5,13 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Transporte;
+
 /**
  *
  * @author Usuario
  */
-public class Helicoptero extends Aereo{
+public class Helicoptero extends Aereo implements Transporte{
     
     private int palanca;
     private String tipo;
@@ -100,6 +102,16 @@ public class Helicoptero extends Aereo{
     public void cargar(){
     
         System.out.println("el helicoptero carga los materiales");
+    }
+
+    @Override
+    public String imprimir() {
+       return "este entra al metodo imprimir clase Helicotero";
+    }
+
+    @Override
+    public String modificar() {
+        return "se puede modificar desde aqui clase Helicoptero";
     }
    
     

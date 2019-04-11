@@ -5,11 +5,13 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Transporte;
+
 /**
  *
  * @author Usuario
  */
-public class Bicicleta extends Terrestre{
+public class Bicicleta extends Terrestre implements Transporte{
     
     private int pedales;
     private int montura;
@@ -100,5 +102,15 @@ public class Bicicleta extends Terrestre{
     public void pedaliar(){
     
         System.out.println("las personas pedalean para acelerar");
+    }
+
+    @Override
+    public String imprimir() {
+        return "enviando informacion de la clase bicicleta";
+    }
+
+    @Override
+    public String modificar() {
+        return "modificando informacion desde la clase bicicleta";
     }
 }

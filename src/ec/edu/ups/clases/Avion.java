@@ -5,11 +5,13 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Transporte;
+
 /**
  *
  * @author Usuario
  */
-public class Avion extends Aereo{
+public class Avion extends Aereo implements Transporte{
     
     private int alas;
     private String distribucion;
@@ -100,5 +102,15 @@ public class Avion extends Aereo{
     public void descargar(){
     
         System.out.println("los aviones descargan pasajeros ");
+    }
+
+    @Override
+    public String imprimir() {
+       return "la clase avion enviando parametros a la implementacion";
+    }
+
+    @Override
+    public String modificar() {
+       return "la clase avion modificando y mandadno parametros ";
     }
 }
