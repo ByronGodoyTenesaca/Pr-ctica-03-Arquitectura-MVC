@@ -93,5 +93,7 @@ public abstract class Terrestre extends MedioTransporte{
     
         System.out.println("los vehiculos pueden detenerse en cualquier momen");
     }
+    
+    public abstract String llamado();
 
 }

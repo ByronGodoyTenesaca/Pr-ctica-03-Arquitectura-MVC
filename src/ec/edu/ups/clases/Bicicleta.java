@@ -113,4 +113,9 @@ public class Bicicleta extends Terrestre implements Transporte{
     public String modificar() {
         return "modificando informacion desde la clase bicicleta";
     }
+
+    @Override
+    public String llamado() {
+        return "hace un llamado de la clase bicicleta";
+    }
 }

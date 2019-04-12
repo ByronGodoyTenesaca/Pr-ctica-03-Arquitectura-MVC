@@ -113,4 +113,9 @@ public class Avion extends Aereo implements Transporte{
     public String modificar() {
        return "la clase avion modificando y mandadno parametros ";
     }
+
+    @Override
+    public String voladora() {
+       return "llamado de la clase avion";
+    }
 }

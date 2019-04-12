@@ -113,4 +113,9 @@ public class Auto extends Terrestre implements Transporte{
     public String modificar() {
         return "modificando informacion de la clase auto";
     }
+
+    @Override
+    public String llamado() {
+        return "llamado de la clase auto"; 
+    }
 }

@@ -15,6 +15,19 @@ public class Prueba {
    
     public static void main(String []args){
     
+        Aereo aereo=new Aereo() {
+            @Override
+            public String voladora() {
+                return "el ave vuela";
+            }
+        };
+        
+        Terrestre terrestre=new Terrestre() {
+            @Override
+            public String llamado() {
+             return "llamado de terrestre";
+            }
+        };
         Helicoptero helicoptero=new Helicoptero(1, "militar", true, 1, 2, 25, 4, false, 3, "verde", true, 500, "avc056");
         Avion avion=new Avion(5, "tres clases", true, 15, 2, 45, 4, true, 10, "blanco", true, 900, "a1r305t");
         Bicicleta bici=new Bicicleta(2, 2, "hierro", true, "impulso", 2, "aliacion", false, 1, "azul", true, 25, "123asd");
@@ -24,5 +37,7 @@ public class Prueba {
         System.out.println(avion);
         System.out.println(bici);
         System.out.println(carro);
+        System.out.println(aereo.voladora());
+        System.out.println(terrestre.llamado());
     }
 }

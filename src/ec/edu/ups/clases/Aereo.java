@@ -94,4 +94,6 @@ public abstract class Aereo extends MedioTransporte {
         System.out.println("los vehiculos llevan un vuelo de crucero ");
     }
     
+    public abstract String voladora();
+    
 }

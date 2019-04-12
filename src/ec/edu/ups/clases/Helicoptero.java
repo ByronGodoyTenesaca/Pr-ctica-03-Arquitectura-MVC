@@ -113,6 +113,11 @@ public class Helicoptero extends Aereo implements Transporte{
     public String modificar() {
         return "se puede modificar desde aqui clase Helicoptero";
     }
+
+    @Override
+    public String voladora() {
+        return "llamado de la clase helicoptero";
+    }
    
     
     
