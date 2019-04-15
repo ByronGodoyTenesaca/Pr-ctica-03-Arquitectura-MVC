@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ec.edu.ups.clases;
 
 import ec.edu.ups.interfaces.Transporte;
@@ -11,7 +6,7 @@ import ec.edu.ups.interfaces.Transporte;
  *
  * @author Usuario
  */
-public class Bicicleta extends Terrestre implements Transporte{
+public final class Bicicleta extends Terrestre implements Transporte{
     
     private int pedales;
     private int montura;
@@ -114,8 +109,8 @@ public class Bicicleta extends Terrestre implements Transporte{
         return "modificando informacion desde la clase bicicleta";
     }
 
-    @Override
+   /* @Override
     public String llamado() {
         return "hace un llamado de la clase bicicleta";
-    }
+    }*/
 }

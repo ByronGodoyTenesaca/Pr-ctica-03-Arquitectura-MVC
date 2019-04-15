@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ec.edu.ups.clases;
 
 /**
@@ -94,6 +89,6 @@ public abstract class Terrestre extends MedioTransporte{
         System.out.println("los vehiculos pueden detenerse en cualquier momen");
     }
     
-    public abstract String llamado();
+   // public abstract String llamado();
 
 }

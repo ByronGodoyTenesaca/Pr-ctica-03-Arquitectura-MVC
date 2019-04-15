@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ec.edu.ups.clases;
 
 import ec.edu.ups.interfaces.Transporte;
@@ -11,47 +6,48 @@ import ec.edu.ups.interfaces.Transporte;
  *
  * @author Usuario
  */
-public class Avion extends Aereo implements Transporte{
+public final class Avion extends Aereo implements Transporte{
     
     private int alas;
     private String distribucion;
     private boolean entretenimiento;
-    private int tripulacion;
+    private int codigo;
 
     public Avion() {
     }
 
-    public Avion(int alas, String distribucion, boolean entretenimiento, int tripulacion) {
+    public Avion(int alas, String distribucion, boolean entretenimiento, int codigo) {
         this.alas = alas;
         this.distribucion = distribucion;
         this.entretenimiento = entretenimiento;
-        this.tripulacion = tripulacion;
+        this.codigo = codigo;
     }
 
-    public Avion(int alas, String distribucion, boolean entretenimiento, int tripulacion, int rotores, int helices, int estabilizadores, boolean presurizacion) {
+    public Avion(int alas, String distribucion, boolean entretenimiento, int codigo, int rotores, int helices, int estabilizadores, boolean presurizacion) {
         super(rotores, helices, estabilizadores, presurizacion);
         this.alas = alas;
         this.distribucion = distribucion;
         this.entretenimiento = entretenimiento;
-        this.tripulacion = tripulacion;
+        this.codigo = codigo;
     }
 
-    public Avion(int alas, String distribucion, boolean entretenimiento, int tripulacion, int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color) {
+    public Avion(int alas, String distribucion, boolean entretenimiento, int codigo, int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color) {
         super(rotores, helices, estabilizadores, presurizacion, llantas, color);
         this.alas = alas;
         this.distribucion = distribucion;
         this.entretenimiento = entretenimiento;
-        this.tripulacion = tripulacion;
+        this.codigo = codigo;
     }
 
-    public Avion(int alas, String distribucion, boolean entretenimiento, int tripulacion, int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color, boolean combustible, double velocidad, String matricula) {
+    public Avion(int codigo, String distribucion, boolean entretenimiento, int alas , int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color, boolean combustible, double velocidad, String matricula) {
         super(rotores, helices, estabilizadores, presurizacion, llantas, color, combustible, velocidad, matricula);
         this.alas = alas;
         this.distribucion = distribucion;
         this.entretenimiento = entretenimiento;
-        this.tripulacion = tripulacion;
+        this.codigo = codigo;
     }
 
+    
     public int getAlas() {
         return alas;
     }
@@ -77,16 +73,16 @@ public class Avion extends Aereo implements Transporte{
     }
 
     public int getTripulacion() {
-        return tripulacion;
+        return codigo;
     }
 
-    public void setTripulacion(int tripulacion) {
-        this.tripulacion = tripulacion;
+    public void setTripulacion(int codigo) {
+        this.codigo = codigo;
     }
 
     @Override
     public String toString() {
-        return super.toString()+"Avion{" + "alas=" + alas + ", distribucion=" + distribucion + ", entretenimiento=" + entretenimiento + ", tripulacion=" + tripulacion + '}';
+        return super.toString()+"Avion{" + "alas=" + alas + ", distribucion=" + distribucion + ", entretenimiento=" + entretenimiento + ", codigo=" + codigo + '}';
     }
     
     public void elevarse(){
@@ -114,8 +110,8 @@ public class Avion extends Aereo implements Transporte{
        return "la clase avion modificando y mandadno parametros ";
     }
 
-    @Override
+   /* @Override
     public String voladora() {
        return "llamado de la clase avion";
-    }
+    }*/
 }

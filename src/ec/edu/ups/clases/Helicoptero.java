@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ec.edu.ups.clases;
 
 import ec.edu.ups.interfaces.Transporte;
@@ -11,7 +6,7 @@ import ec.edu.ups.interfaces.Transporte;
  *
  * @author Usuario
  */
-public class Helicoptero extends Aereo implements Transporte{
+public final class Helicoptero extends Aereo implements Transporte{
     
     private int palanca;
     private String tipo;
@@ -114,10 +109,10 @@ public class Helicoptero extends Aereo implements Transporte{
         return "se puede modificar desde aqui clase Helicoptero";
     }
 
-    @Override
+    /*@Override
     public String voladora() {
         return "llamado de la clase helicoptero";
-    }
+    }*/
    
     
     
