@@ -70,7 +70,7 @@ public class MedioTransporte {
 
     @Override
     public String toString() {
-        return "\nMedioTransporte{" + "llantas=" + llantas + ", color=" + color + ", combustible=" + combustible + ", velocidad=" + velocidad + ", matricula=" + matricula + '}';
+        return "MedioTransporte{" + "llantas=" + llantas + ", color=" + color + ", combustible=" + combustible + ", velocidad=" + velocidad + ", matricula=" + matricula + '}';
     }
     
     

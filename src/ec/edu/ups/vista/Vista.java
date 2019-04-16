@@ -30,10 +30,11 @@ public class Vista {
                 + "ingrese su opcion:");
         int o=x.nextInt();
         switch(o){
+           
+            
             case 1:
             
                 boolean salir = true;
-                
                 do{
                     subMenu();
                     sub=x.nextInt();
@@ -128,7 +129,7 @@ public class Vista {
                             break;
                             
                         case 4:
-                            System.out.println("ingrese el codigo a verificar: ");
+                            System.out.println("ingrese el codigo a eliminar: ");
                             codigo=x.nextInt();
                             CA.delete(codigo);
                             break;
@@ -140,6 +141,10 @@ public class Vista {
                             
                     }
                 }while(salir==true);
+            
+           
+            
+            
             
             case 2:
                 

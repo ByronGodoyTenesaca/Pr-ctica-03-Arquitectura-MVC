@@ -71,7 +71,7 @@ public abstract class Aereo extends MedioTransporte {
 
     @Override
     public String toString() {
-        return super.toString()+"Aereo{" + "rotores=" + rotores + ", helices=" + helices + ", estabilizadores=" + estabilizadores + ", presurizacion=" + presurizacion + '}';
+        return "Aereo{" + "rotores=" + rotores + ", helices=" + helices + ", estabilizadores=" + estabilizadores + ", presurizacion=" + presurizacion + '}'+super.toString();
     }
    
     public void despegar(){

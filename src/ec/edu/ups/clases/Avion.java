@@ -82,7 +82,7 @@ public final class Avion extends Aereo implements Transporte{
 
     @Override
     public String toString() {
-        return super.toString()+"Avion{" + "alas=" + alas + ", distribucion=" + distribucion + ", entretenimiento=" + entretenimiento + ", codigo=" + codigo + '}';
+        return "Avion{" + "alas=" + alas + ", distribucion=" + distribucion + ", entretenimiento=" + entretenimiento + ", codigo=" + codigo + '}'+super.toString();
     }
     
     public void elevarse(){
