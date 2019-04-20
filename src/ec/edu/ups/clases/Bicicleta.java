@@ -23,21 +23,6 @@ public final class Bicicleta extends Terrestre implements Transporte{
         this.horquilla = horquilla;
     }
 
-    public Bicicleta(int pedales, int montura, String materialcuadro, boolean horquilla, String mediopropulsion, int aro, String material, boolean motorizado) {
-        super(mediopropulsion, aro, material, motorizado);
-        this.pedales = pedales;
-        this.montura = montura;
-        this.materialcuadro = materialcuadro;
-        this.horquilla = horquilla;
-    }
-
-    public Bicicleta(int pedales, int montura, String materialcuadro, boolean horquilla, String mediopropulsion, int aro, String material, boolean motorizado, int llantas, String color) {
-        super(mediopropulsion, aro, material, motorizado, llantas, color);
-        this.pedales = pedales;
-        this.montura = montura;
-        this.materialcuadro = materialcuadro;
-        this.horquilla = horquilla;
-    }
 
     public Bicicleta(int pedales, int montura, String materialcuadro, boolean horquilla, String mediopropulsion, int aro, String material, boolean motorizado, int llantas, String color, boolean combustible, double velocidad, String matricula) {
         super(mediopropulsion, aro, material, motorizado, llantas, color, combustible, velocidad, matricula);
@@ -46,6 +31,16 @@ public final class Bicicleta extends Terrestre implements Transporte{
         this.materialcuadro = materialcuadro;
         this.horquilla = horquilla;
     }
+
+    public Bicicleta(int pedales, int montura, String materialcuadro, boolean horquilla, String mediopropulsion, int aro, String material, boolean motorizado, int llantas, String color, boolean combustible, double velocidad, String matricula, int codigo) {
+        super(mediopropulsion, aro, material, motorizado, llantas, color, combustible, velocidad, matricula, codigo);
+        this.pedales = pedales;
+        this.montura = montura;
+        this.materialcuadro = materialcuadro;
+        this.horquilla = horquilla;
+    }
+    
+    
 
     public int getPedales() {
         return pedales;

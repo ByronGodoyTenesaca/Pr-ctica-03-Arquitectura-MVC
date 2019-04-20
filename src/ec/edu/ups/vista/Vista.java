@@ -77,7 +77,9 @@ public class Vista {
                             System.out.print("cual es la matricula del avion: ");
                             mat=x.next();
                             
-                            Avion avion=new Avion(codigo, dis, entre, alas , rotor, eli, est, pre, llanta, color, true, vel, mat);
+                            
+                            Avion avion=new Avion(alas, dis, entre, rotor, eli, est, pre, llanta, color, true, vel, mat, codigo);
+                            
                             CA.creat(avion);
                             
                             break;
@@ -124,7 +126,7 @@ public class Vista {
                             System.out.print("cual es la matricula del avion: ");
                             mat=x.next();
                             
-                            avion=new Avion(codigo, dis, entre, alas , rotor, eli, est, pre, llanta, color, true, vel, mat);
+                            avion=new Avion(alas, dis, entre, rotor, eli, est, pre, llanta, color, true, vel, mat, codigo);
                             CA.update(avion);
                             break;
                             
@@ -143,7 +145,7 @@ public class Vista {
                 }while(salir==true);
             
            
-            
+                break;
             
             
             case 2:

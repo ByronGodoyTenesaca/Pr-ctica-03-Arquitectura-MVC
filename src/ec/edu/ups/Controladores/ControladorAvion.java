@@ -29,7 +29,7 @@ public class ControladorAvion {
     public Avion read(int codigo){
     
         for (Avion avion : lista) {
-            if (avion.getTripulacion()==codigo){
+            if (avion.getCodigo()==codigo){
             return avion;
             }
         }
@@ -40,7 +40,7 @@ public class ControladorAvion {
 
         for (int i = 0; i < lista.size(); i++) {
             Avion elemento=lista.get(i);
-            if(elemento.getTripulacion()==avion.getTripulacion()){
+            if(elemento.getCodigo()==avion.getCodigo()){
             
                 lista.set(i, avion);
                 break;
@@ -54,7 +54,7 @@ public class ControladorAvion {
         for (int i = 0; i < lista.size(); i++) {
             Avion elemento = lista.get(i);
             
-            if(elemento.getTripulacion()==codigo){
+            if(elemento.getCodigo()==codigo){
             
                 lista.remove(i);
                 break;

@@ -8,7 +8,7 @@ import ec.edu.ups.interfaces.Transporte;
  */
 public final class Helicoptero extends Aereo implements Transporte{
     
-    private int codigo;
+   
     private String tipo;
     private boolean artilleria;
     private int mastil;
@@ -16,44 +16,28 @@ public final class Helicoptero extends Aereo implements Transporte{
     public Helicoptero() {
     }
 
-    public Helicoptero(int codigo, String tipo, boolean artilleria, int mastil) {
-        this.codigo = codigo;
+    public Helicoptero( String tipo, boolean artilleria, int mastil) {
+      
         this.tipo = tipo;
         this.artilleria = artilleria;
         this.mastil = mastil;
     }
 
-    public Helicoptero(int codigo, String tipo, boolean artilleria, int mastil, int rotores, int helices, int estabilizadores, boolean presurizacion) {
+    public Helicoptero( String tipo, boolean artilleria, int mastil, int rotores, int helices, int estabilizadores, boolean presurizacion) {
         super(rotores, helices, estabilizadores, presurizacion);
-        this.codigo = codigo;
+       
         this.tipo = tipo;
         this.artilleria = artilleria;
         this.mastil = mastil;
     }
 
-    public Helicoptero(int codigo, String tipo, boolean artilleria, int mastil, int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color) {
-        super(rotores, helices, estabilizadores, presurizacion, llantas, color);
-        this.codigo = codigo;
+    public Helicoptero( String tipo, boolean artilleria, int mastil, int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color, boolean combustible, double velocidad, String matricula, int codigo) {
+        super(rotores, helices, estabilizadores, presurizacion, llantas, color, combustible, velocidad, matricula, codigo);
         this.tipo = tipo;
         this.artilleria = artilleria;
         this.mastil = mastil;
     }
 
-    public Helicoptero(int codigo, String tipo, boolean artilleria, int mastil, int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color, boolean combustible, double velocidad, String matricula) {
-        super(rotores, helices, estabilizadores, presurizacion, llantas, color, combustible, velocidad, matricula);
-        this.codigo=codigo;
-        this.tipo = tipo;
-        this.artilleria = artilleria;
-        this.mastil = mastil;
-    }
-
-    public int getCodigo() {
-        return codigo;
-    }
-
-    public void setcodigo(int codigo) {
-        this.codigo = codigo;
-    }
 
     public String getTipo() {
         return tipo;
@@ -81,7 +65,7 @@ public final class Helicoptero extends Aereo implements Transporte{
 
     @Override
     public String toString() {
-        return super.toString()+"Helicoptero{" + "codigo=" + codigo + ", tipo=" + tipo + ", artilleria=" + artilleria + ", mastil=" + mastil + '}';
+        return super.toString()+"Helicoptero{"  + ", tipo=" + tipo + ", artilleria=" + artilleria + ", mastil=" + mastil + '}';
     }
     
     public void encender(){

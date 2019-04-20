@@ -20,15 +20,7 @@ public abstract class Terrestre extends MedioTransporte{
         this.material = material;
         this.motorizado = motorizado;
     }
-
-    public Terrestre(String mediopropulsion, int aro, String material, boolean motorizado, int llantas, String color) {
-        super(llantas, color);
-        this.mediopropulsion = mediopropulsion;
-        this.aro = aro;
-        this.material = material;
-        this.motorizado = motorizado;
-    }
-
+    
     public Terrestre(String mediopropulsion, int aro, String material, boolean motorizado, int llantas, String color, boolean combustible, double velocidad, String matricula) {
         super(llantas, color, combustible, velocidad, matricula);
         this.mediopropulsion = mediopropulsion;
@@ -36,6 +28,18 @@ public abstract class Terrestre extends MedioTransporte{
         this.material = material;
         this.motorizado = motorizado;
     }
+
+   
+    public Terrestre(String mediopropulsion, int aro, String material, boolean motorizado, int llantas, String color, boolean combustible, double velocidad, String matricula, int codigo) {
+        super(llantas, color, combustible, velocidad, matricula, codigo);
+        this.mediopropulsion = mediopropulsion;
+        this.aro = aro;
+        this.material = material;
+        this.motorizado = motorizado;
+    }
+ 
+
+    
 
     public String getMediopropulsion() {
         return mediopropulsion;

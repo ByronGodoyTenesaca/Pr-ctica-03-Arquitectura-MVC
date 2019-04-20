@@ -21,14 +21,6 @@ public abstract class Aereo extends MedioTransporte {
         this.presurizacion = presurizacion;
     }
 
-    public Aereo(int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color) {
-        super(llantas, color);
-        this.rotores = rotores;
-        this.helices = helices;
-        this.estabilizadores = estabilizadores;
-        this.presurizacion = presurizacion;
-    }
-
     public Aereo(int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color, boolean combustible, double velocidad, String matricula) {
         super(llantas, color, combustible, velocidad, matricula);
         this.rotores = rotores;
@@ -36,6 +28,16 @@ public abstract class Aereo extends MedioTransporte {
         this.estabilizadores = estabilizadores;
         this.presurizacion = presurizacion;
     }
+
+    public Aereo(int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color, boolean combustible, double velocidad, String matricula, int codigo) {
+        super(llantas, color, combustible, velocidad, matricula, codigo);
+        this.rotores = rotores;
+        this.helices = helices;
+        this.estabilizadores = estabilizadores;
+        this.presurizacion = presurizacion;
+    }
+    
+    
 
     public int getRotores() {
         return rotores;

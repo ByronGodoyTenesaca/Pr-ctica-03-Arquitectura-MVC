@@ -11,41 +11,34 @@ public final class Avion extends Aereo implements Transporte{
     private int alas;
     private String distribucion;
     private boolean entretenimiento;
-    private int codigo;
+  
 
     public Avion() {
     }
 
-    public Avion(int alas, String distribucion, boolean entretenimiento, int codigo) {
+    public Avion(int alas, String distribucion, boolean entretenimiento) {
         this.alas = alas;
         this.distribucion = distribucion;
         this.entretenimiento = entretenimiento;
-        this.codigo = codigo;
+       
     }
 
-    public Avion(int alas, String distribucion, boolean entretenimiento, int codigo, int rotores, int helices, int estabilizadores, boolean presurizacion) {
+    public Avion(int alas, String distribucion, boolean entretenimiento, int rotores, int helices, int estabilizadores, boolean presurizacion) {
         super(rotores, helices, estabilizadores, presurizacion);
         this.alas = alas;
         this.distribucion = distribucion;
         this.entretenimiento = entretenimiento;
-        this.codigo = codigo;
+        
     }
 
-    public Avion(int alas, String distribucion, boolean entretenimiento, int codigo, int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color) {
-        super(rotores, helices, estabilizadores, presurizacion, llantas, color);
+    public Avion(int alas, String distribucion, boolean entretenimiento, int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color, boolean combustible, double velocidad, String matricula, int codigo) {
+        super(rotores, helices, estabilizadores, presurizacion, llantas, color, combustible, velocidad, matricula, codigo);
         this.alas = alas;
         this.distribucion = distribucion;
         this.entretenimiento = entretenimiento;
-        this.codigo = codigo;
     }
 
-    public Avion(int codigo, String distribucion, boolean entretenimiento, int alas , int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color, boolean combustible, double velocidad, String matricula) {
-        super(rotores, helices, estabilizadores, presurizacion, llantas, color, combustible, velocidad, matricula);
-        this.alas = alas;
-        this.distribucion = distribucion;
-        this.entretenimiento = entretenimiento;
-        this.codigo = codigo;
-    }
+   
 
     
     public int getAlas() {
@@ -72,17 +65,9 @@ public final class Avion extends Aereo implements Transporte{
         this.entretenimiento = entretenimiento;
     }
 
-    public int getTripulacion() {
-        return codigo;
-    }
-
-    public void setTripulacion(int codigo) {
-        this.codigo = codigo;
-    }
-
     @Override
     public String toString() {
-        return "Avion{" + "alas=" + alas + ", distribucion=" + distribucion + ", entretenimiento=" + entretenimiento + ", codigo=" + codigo + '}'+super.toString();
+        return "Avion{" + "alas=" + alas + ", distribucion=" + distribucion + ", entretenimiento=" + entretenimiento + '}'+super.toString();
     }
     
     public void elevarse(){

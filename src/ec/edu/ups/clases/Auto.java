@@ -23,21 +23,7 @@ public final class Auto extends Terrestre implements Transporte{
         this.tapacubos = tapacubos;
     }
 
-    public Auto(String materialparachoques, boolean capo, boolean maletero, int tapacubos, String mediopropulsion, int aro, String material, boolean motorizado) {
-        super(mediopropulsion, aro, material, motorizado);
-        this.materialparachoques = materialparachoques;
-        this.capo = capo;
-        this.maletero = maletero;
-        this.tapacubos = tapacubos;
-    }
-
-    public Auto(String materialparachoques, boolean capo, boolean maletero, int tapacubos, String mediopropulsion, int aro, String material, boolean motorizado, int llantas, String color) {
-        super(mediopropulsion, aro, material, motorizado, llantas, color);
-        this.materialparachoques = materialparachoques;
-        this.capo = capo;
-        this.maletero = maletero;
-        this.tapacubos = tapacubos;
-    }
+   
 
     public Auto(String materialparachoques, boolean capo, boolean maletero, int tapacubos, String mediopropulsion, int aro, String material, boolean motorizado, int llantas, String color, boolean combustible, double velocidad, String matricula) {
         super(mediopropulsion, aro, material, motorizado, llantas, color, combustible, velocidad, matricula);
@@ -46,6 +32,16 @@ public final class Auto extends Terrestre implements Transporte{
         this.maletero = maletero;
         this.tapacubos = tapacubos;
     }
+    
+     public Auto(String materialparachoques, boolean capo, boolean maletero, int tapacubos, String mediopropulsion, int aro, String material, boolean motorizado, int llantas, String color, boolean combustible, double velocidad, String matricula, int codigo) {
+        super(mediopropulsion, aro, material, motorizado, llantas, color, combustible, velocidad, matricula, codigo);
+        this.materialparachoques = materialparachoques;
+        this.capo = capo;
+        this.maletero = maletero;
+        this.tapacubos = tapacubos;
+    }
+     
+     
 
     public String getMaterialparachoques() {
         return materialparachoques;
