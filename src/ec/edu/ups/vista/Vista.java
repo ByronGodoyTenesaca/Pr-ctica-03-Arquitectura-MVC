@@ -461,7 +461,8 @@ public class Vista {
                     case 2:
                         System.out.println("ingrese el codigo a verificar: ");
                             int codigo=x.nextInt();
-                            System.out.println("datos de la Bicicleta:\n "+Cb.read(codigo));
+                            System.out.println("datos de la Bicicleta: ");
+                            Cb.read(codigo);
                             break;
                         
                     case 3:
