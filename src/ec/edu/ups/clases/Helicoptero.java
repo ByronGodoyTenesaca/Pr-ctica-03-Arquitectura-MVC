@@ -38,6 +38,14 @@ public final class Helicoptero extends Aereo implements Transporte{
         this.mastil = mastil;
     }
 
+    public Helicoptero(String tipo, boolean artilleria, int mastil, int rotores, int helices, int estabilizadores, boolean presurizacion, int llantas, String color, boolean combustible, double velocidad, String matricula) {
+        super(rotores, helices, estabilizadores, presurizacion, llantas, color, combustible, velocidad, matricula);
+        this.tipo = tipo;
+        this.artilleria = artilleria;
+        this.mastil = mastil;
+    }
+    
+
 
     public String getTipo() {
         return tipo;

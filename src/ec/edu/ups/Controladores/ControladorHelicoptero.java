@@ -31,7 +31,7 @@ public class ControladorHelicoptero {
         for (Helicoptero helicoptero : lista) {
             if (helicoptero.getCodigo()==codigo){
             
-                System.out.println(helicoptero);
+                return helicoptero;
             }
         }
         return null;

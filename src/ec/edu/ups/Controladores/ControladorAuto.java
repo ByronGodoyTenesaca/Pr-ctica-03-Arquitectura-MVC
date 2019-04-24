@@ -17,7 +17,7 @@ public class ControladorAuto {
     public ControladorAuto() {
     
         listaOrdenada=new TreeSet<>();
-        codigo =1;
+        codigo =0;
     }
     
     
