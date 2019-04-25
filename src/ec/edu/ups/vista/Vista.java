@@ -252,16 +252,17 @@ public class Vista {
                             vel=x.nextDouble();
                             System.out.print("cual es la matricula del Helicoptero: ");
                             mat=x.next();
-                            
+                            System.out.print("cual es el codigo del helicoptero: ");
+                            codigo=x.nextInt();
                            
-                            heli=new Helicoptero(tipo, arti, mastil, rotor, eli, est, pre, llanta, color, entre, vel, mat);
+                            heli=new Helicoptero(tipo, arti, mastil, rotor, eli, est, pre, llanta, color, entre, vel, mat,codigo);
                             CH.update(heli);
                             break;
                             
                         case 4:
                             System.out.println("ingrese el codigo a eliminar: ");
                             codigo=x.nextInt();
-                            CA.delete(codigo);
+                            CH.remove(codigo);
                             break;
                             
                         case 5:
@@ -334,7 +335,7 @@ public class Vista {
                     case 2:
                         System.out.println("ingrese el codigo a verificar: ");
                             int codigo=x.nextInt();
-                            System.out.println("datos del Auto:\n"+CH.read(codigo));
+                            System.out.println("datos del Auto:\n"+Ca.read(codigo));
                             break;
                             
                     case 3:
