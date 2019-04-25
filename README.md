@@ -35,7 +35,11 @@ Controladorhelicoptero ==> Set y HashSet
 ![corrida3](https://user-images.githubusercontent.com/49033745/56708642-1a845400-66e3-11e9-96fc-904400b70de2.jpg)
 ![corrida4](https://user-images.githubusercontent.com/49033745/56708677-35ef5f00-66e3-11e9-8482-abdf7d715fa0.jpg)
 
-- 5) nombre y url del repositorio
+- 5) diagrama UML del pryecto con su respectivas clases, controladores y vista
+![uml](https://user-images.githubusercontent.com/49033745/56710196-88804980-66ea-11e9-9c8d-022dcbb15e64.JPG)
+
+
+- 6) nombre y url del repositorio
 
 ![nombre](https://user-images.githubusercontent.com/49033745/56708730-6800c100-66e3-11e9-8b5e-62e02036f871.jpg)
 
