@@ -61,7 +61,7 @@ public class Prueba {
             System.out.println("si existe");
         }
         
-        SortedSet<Avion> listaOrdenada=new TreeSet<>();// ordena las listas 
+        /*SortedSet<Avion> listaOrdenada=new TreeSet<>();// ordena las listas 
         listaOrdenada.add(avion3);
         listaOrdenada.add(avion1);
         listaOrdenada.add(avion2);
@@ -69,6 +69,6 @@ public class Prueba {
         System.out.println("lista ordenada");
         for (Avion avion : listaOrdenada) {
             System.out.println(avion.getMatricula());
-        }
+        }*/
     }
 }
